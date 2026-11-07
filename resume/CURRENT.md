@@ -10,14 +10,13 @@ Danang, Vietnam
 - Home: [nguyenhung.me](https://nguyenhung.me)
 - GitHub: [github.com/nguyenhung1903](https://github.com/nguyenhung1903)
 - LinkedIn: [linkedin.com/in/nguyenhung1903](https://linkedin.com/in/nguyenhung1903)
-- Kaggle: nguyenhung1903
-- Google Scholar: An Hung Nguyen
+- Google Scholar: [An Hung Nguyen](https://scholar.google.com/citations?user=OLV8FnYAAAAJ&hl=en)
 
 ## Personal Profile
 
-I am a researcher with a strong passion for Artificial Intelligence and Data Science. I have applied AI to real-world problems in medicine and agriculture through collaborations with scientific labs in Vietnam and internationally.
+AI Engineer with 5+ years of experience in Computer Vision, bridging academic research and real-world applications. Experienced in building end-to-end machine learning pipelines, from data analysis and model training to optimization and deployment on edge devices. I also have experience working with Large Language Models (LLMs) and helping customers improve the reliability, scalability, and cost-efficiency of AI solutions.
 
-My research interests include Computational Biology, Bioinformatics, Mathematics, Hyper-complex and Quaternion numbers, View Synthesis, Neural Rendering, and Real-Time Graphics.
+I have authored and co-authored 10+ research papers and received several academic awards throughout high school and university. Passionate about research and continuous learning, I enjoy exploring new technologies, tackling challenging problems, and turning innovative ideas into practical solutions.
 
 ## Education
 
