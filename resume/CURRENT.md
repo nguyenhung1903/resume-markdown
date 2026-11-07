@@ -218,5 +218,5 @@ ACM: Association for Computing Machinery — Dubai, UAE — December 16, 2021
 - Jan 2020 — 3rd prizes, Provincial Contest for Excellent Students in Informatics — Vietnam
 
 ## Languages
-- English: Professional Proficiency (B2)
+- English: Minimum Professional Proficiency (B2)
 - Vietnamese: Native proficiency
