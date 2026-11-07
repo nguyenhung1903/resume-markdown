@@ -10,7 +10,7 @@ import markdown
 HERE = Path(__file__).resolve().parent
 
 MONTHS = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*"
-SEP = " - "  
+SEP = " — "  
 OWNER_NAME = "An Hung Nguyen"  
 
 PAGE = Template("""<!DOCTYPE html>
@@ -106,8 +106,8 @@ def build_section(chunk: str) -> str:
     # "Mar 2025 - text" -> date column + text column
     if slug == "top-honors-and-awards":
         body = re.sub(
-            rf"<li>({MONTHS} \d{{4}}){re.escape(SEP)}(.*?)</li>",
-            r'<li><span class="date">\1</span><span>\2</span></li>',
+            rf"<li>({MONTHS} \d{{4}}){re.escape(SEP)}(.*?){re.escape(SEP)}(.*?)</li>",
+            r'<li><span class="date">\1</span><span>\2</span><span class="right">\3</span></li>',
             body,
         )
 

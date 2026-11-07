@@ -5,7 +5,7 @@
 Danang, Vietnam
 
 - Mobile: +84354430933
-- Email: nguyenanhung1903@gmail.com 
+- Email: nguyenanhung1903@gmail.com
 - Birthday: March 19th, 2003
 - Home: [nguyenhung.me](https://nguyenhung.me)
 - GitHub: [github.com/nguyenhung1903](https://github.com/nguyenhung1903)
@@ -24,7 +24,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### University of Science and Technology - The University of Danang
 *Danang, VN*
 
-**B.S., Information Technology** - 2021 - 2025
+**B.S., Information Technology** — 2021 - 2025
 
 - Grade: 3.65/4.0
 - Excellent Bachelor's Degree
@@ -35,7 +35,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### Le Quy Don upper-secondary school for the gifted
 *Quang Tri, VN*
 
-**Informatics class (IT 18-21)** - 2018 - 2021
+**Informatics class (IT 18-21)** — 2018 - 2021
 
 - Specialised in Biology, Informatics, and Mathematics with Computer Science
 - Selected as a member of the national-level scientific research competition team and the Informatics gifted student team.
@@ -45,7 +45,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### SLA Software Logistik Artland GmbH
 *Germany (Remote)*
 
-**Computer Scientist & AI Engineer** - Aug 2024 - Sept 2026
+**Computer Scientist & AI Engineer** — Aug 2024 - Sept 2026
 
 - Support of integration of AI models into existing customer infrastructure.
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
@@ -58,7 +58,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### University of Regina
 *Canada*
 
-**Collaboration Researcher** - Aug 2024 - Sept 2025
+**Collaboration Researcher** — Aug 2024 - Sept 2025
 
 - Researched solutions for simulating chemical processes.
 - Implemented simulation code using Matlab and Python.
@@ -66,7 +66,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### Phygital Labs
 *Vietnam*
 
-**AI Intern** - May 2024 - Jul 2024
+**AI Intern** — May 2024 - Jul 2024
 
 - Worked as an AI intern on deep learning projects.
 - Worked with LLM models to propose solutions for querying large documents.
@@ -75,7 +75,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### FX Data
 *Germany (Remote)*
 
-**Computer Scientist & AI Engineer** - Jan 2022 - Jul 2024
+**Computer Scientist & AI Engineer** — Jan 2022 - Jul 2024
 
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
 - Developed scripts and applications to automate and handle data.
@@ -87,7 +87,7 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### Rhen Consulting
 *Germany (Remote)*
 
-**AI Engineer** - Oct 2021 - Dec 2021
+**AI Engineer** — Oct 2021 - Dec 2021
 
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
 - Developed scripts and applications to automate and handle data.
@@ -98,27 +98,27 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### Fourth Place Award in the Field of Science, Engineering, and Technology
 *Vietnam*
 
-Vietnam Student Science Research and Innovation 2022 - 2023 - Dec 2023
+Vietnam Student Science Research and Innovation 2022 - 2023 — Dec 2023
 
 Project title: Quaternion Convolutional Neural Networks for Image Depth Estimation
 
 ### Fourth Place Award in the in Computational Biology and Bioinformatics
 *Vietnam*
 
-Vietnam National Secondary Student Science and Engineering Fair - March 2021
+Vietnam National Secondary Student Science and Engineering Fair — March 2021
 
 Project title: Applying Deep Learning to the process of diagnosing, analyzing and detecting damage to the retina due to diabetes
 
 ### Third Prize in the Provincial Contest for Excellent Students in Informatics
 *Vietnam*
 
-Quang Tri Department of Education and Training - Jan 2020
+Quang Tri Department of Education and Training — Jan 2020
 
 ## Publications
 
 ### All-in-One Image Restoration with Quaternion Cross-Attention and Haar Frequency Decomposition
 
-Submitted to Signal, Image and Video Processing (Journal Q2) - 2025
+Submitted to Signal, Image and Video Processing (Journal Q2) — 2025
 
 - Status: Under review
 - An Hung Nguyen, Minh Tuan Pham
@@ -127,35 +127,35 @@ Submitted to Signal, Image and Video Processing (Journal Q2) - 2025
 
 ### Optimizing Retrieval in Vietnamese Literary QA Using Named-Entity Relationship Graphs
 
-Submitted to ACM Transactions on Asian and Low-Resource Language Information Processing (Q2) - 2025
+Submitted to ACM Transactions on Asian and Low-Resource Language Information Processing (Q2) — 2025
 
 - Status: Under review
 - Minh Tuan Pham, An Hung Nguyen, Phuc Hao Do, Thanh Huy Nguyen, and Nam Do
 
 ### Real-Time 3D Reconstruction through Image Synthesis and IoT Integration
 
-Manuscript under review - 2025
+Manuscript under review — 2025
 
 - Cong Thang PHAM, An Hung Nguyen, Tan Sang Truong, Dai Quy Tran, Si Tien Tran
 - Submitted to Vestnik St. Petersburg University: Mathematics
 
 ### Adaptive Hybrid Transformer Network with Frequency Attention for All-in-One Image Restoration
 
-PSBB25 - Moscow, RUSSIA - June 09 - 11, 2025
+PSBB25 — Moscow, RUSSIA — June 09 - 11, 2025
 
 - Cong Thang Pham, An Hung Nguyen, Quoc Cuong Nguyen, Minh Nhat Phan, Thanh Than Nguyen
 - 10.5194/isprs-archives-XLVIII-2-W9-2025-213-2025
 
 ### DehazeCLNet: A Contrastive Learning Framework with Advanced Feature Extraction for Image Dehazing
 
-SOICT 2024 (Springer CCIS) - Danang, Vietnam - December 13-15, 2024
+SOICT 2024 (Springer CCIS) — Danang, Vietnam — December 13-15, 2024
 
 - Cong Thang Pham, An Hung Nguyen, Quoc Cuong Nguyen, Minh Nhat Phan
 - 10.1007/978-981-96-4282-3_23
 
 ### Enhancing Image Classification Capabilities In The Vision Transformer Network Model With Quaternion Algebra
 
-CITA 2024 - Danang, Vietnam - July, 2024
+CITA 2024 — Danang, Vietnam — July, 2024
 
 - Minh Tuan Pham, An Hung Nguyen
 - [https://elib.vku.udn.vn/handle/123456789/4031](https://elib.vku.udn.vn/handle/123456789/4031)
@@ -163,28 +163,28 @@ CITA 2024 - Danang, Vietnam - July, 2024
 
 ### Enhancing Convolutional Neural Network Architectures with Long Short-Term Memory for Improved Image Classification
 
-IEEE: Institute of Electrical and Electronics Engineers - Danang, Vietnam - November 10-11, 2023
+IEEE: Institute of Electrical and Electronics Engineers — Danang, Vietnam — November 10-11, 2023
 
 - An Hung Nguyen, Minh Tuan Pham
 - 10.1109/ATiGB59969.2023.10364368
 
 ### Quaternion Convolutional Neural Networks for Depth Estimation
 
-IEEE: Institute of Electrical and Electronics Engineers - Mie, Japan - January 4, 2023
+IEEE: Institute of Electrical and Electronics Engineers — Mie, Japan — January 4, 2023
 
 - An Hung Nguyen, Cao Duy Hoang, Dang Hoang Phu Phan, Minh Tuan Pham
 - [https://doi.org/10.1109/SCISISIS55246.2022.10002074](https://doi.org/10.1109/SCISISIS55246.2022.10002074)
 
 ### Weight Initialization for Complex Number Convolutional Neural Networks Using Genetic Algorithms
 
-Journal on Information Technologies and Communications - Vietnam - June 30, 2022
+Journal on Information Technologies and Communications — Vietnam — June 30, 2022
 
 - Minh Tuan Pham, An Hung Nguyen
 - [https://doi.org/10.32913/mic-ict-research-vn.v2022.n1.1054](https://doi.org/10.32913/mic-ict-research-vn.v2022.n1.1054)
 
 ### Efficient Complex Valued Neural Network with Fourier Transform on Image Denoising
 
-ACM: Association for Computing Machinery - Dubai, UAE - December 16, 2021
+ACM: Association for Computing Machinery — Dubai, UAE — December 16, 2021
 
 - Minh Tuan Pham, Van Quang Nguyen, Cao Duy Hoang, An Hung Nguyen
 - [https://doi.org/10.1145/3508072.3508081](https://doi.org/10.1145/3508072.3508081)
@@ -197,16 +197,16 @@ ACM: Association for Computing Machinery - Dubai, UAE - December 16, 2021
 
 ## Top honors and awards
 
-- Mar 2025 - 2nd prizes, Faculty level Student Scientific Research and Innovation - Vietnam
-- Dec 2023 - Third prize, University-level Student Scientific Research and Innovation - Vietnam
-- Dec 2023 - First prize, Faculty level Student Scientific Research and Innovation - Vietnam
-- Dec 2023 - 4th prizes, Vietnam Student Science Research and Innovation - Vietnam
-- Jun 2023 - 3rd prizes, Faculty level Student Scientific Research and Innovation - Vietnam
-- Mar 2022 - 2nd prizes, Faculty level Student Science Research and Innovation - Vietnam
-- Aug 2021 - Second prize (ranked 1st), Innovative Generation 2021 - Vietnam
-- Mar 2021 - 4th prizes, Vietnam National Secondary Student Science and Engineering Fair - Vietnam
-- Jan 2021 - 4th prizes, Provincial Contest for Excellent Students in Informatics - Vietnam
-- Jan 2020 - 3rd prizes, Provincial Contest for Excellent Students in Informatics - Vietnam
+- Mar 2025 — 2nd prizes, Faculty level Student Scientific Research and Innovation — Vietnam
+- Dec 2023 — Third prize, University-level Student Scientific Research and Innovation — Vietnam
+- Dec 2023 — First prize, Faculty level Student Scientific Research and Innovation — Vietnam
+- Dec 2023 — 4th prizes, Vietnam Student Science Research and Innovation — Vietnam
+- Jun 2023 — 3rd prizes, Faculty level Student Scientific Research and Innovation — Vietnam
+- Mar 2022 — 2nd prizes, Faculty level Student Science Research and Innovation — Vietnam
+- Aug 2021 — Second prize (ranked 1st), Innovative Generation 2021 — Vietnam
+- Mar 2021 — 4th prizes, Vietnam National Secondary Student Science and Engineering Fair — Vietnam
+- Jan 2021 — 4th prizes, Provincial Contest for Excellent Students in Informatics — Vietnam
+- Jan 2020 — 3rd prizes, Provincial Contest for Excellent Students in Informatics — Vietnam
 
 ## Languages
 - English: Professional Proficiency (B2)

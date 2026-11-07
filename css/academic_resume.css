@@ -178,13 +178,32 @@ li::marker { color: var(--accent); }
 #skills li strong { flex: 0 0 92pt; color: var(--accent); }
 
 /* ---------- Top honors (date + text rows) ---------- */
-#top-honors-and-awards ul { list-style: none; padding-left: 0; break-inside: avoid; }
-#top-honors-and-awards li { display: flex; margin: 1.5pt 0; }
-#top-honors-and-awards .date {
-  flex: 0 0 52pt;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
+
+#top-honors-and-awards ul {
+    list-style: none;
+    padding-left: 0;
+    break-inside: avoid;
 }
+
+#top-honors-and-awards li {
+    display: flex;
+    align-items: baseline;
+    margin: 1.5pt 0;
+    gap: 4pt;
+}
+
+#top-honors-and-awards .date {
+    flex: 0 0 52pt;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+
+#top-honors-and-awards .right {
+    margin-left: auto;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
 
 /* ---------- languages (language + level) ---------- */
 #languages li {
