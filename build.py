@@ -2,6 +2,7 @@
 import argparse
 import re
 import sys
+from datetime import datetime
 from pathlib import Path
 from string import Template
 
@@ -12,12 +13,14 @@ HERE = Path(__file__).resolve().parent
 MONTHS = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*"
 SEP = " — "  
 OWNER_NAME = "An Hung Nguyen"  
+DATE_FORMAT = "%B %d, %Y"  # e.g. November 08, 2026
 
 PAGE = Template("""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="date" content="$generated_iso">
 <title>$title</title>
 <style>
 $css
@@ -126,7 +129,7 @@ def build_section(chunk: str) -> str:
     return f'<section id="{slug}"><h2>{heading}</h2>{body}</section>'
 
 
-def structure(html_body: str) -> str:
+def structure(html_body: str, generated: str | None = None) -> str:
     # Footer: everything after the last <hr />
     main, sep, footer = html_body.rpartition("<hr />")
     if not sep:
@@ -135,20 +138,30 @@ def structure(html_body: str) -> str:
     header, *sections = re.split(r"(?=<h2[ >])", main)
     out = f'<header class="resume-header">{header}</header>\n'
     out += "\n".join(build_section(s) for s in sections)
-    if footer.strip():
-        out += f'\n<footer class="resume-footer"><hr />{footer}</footer>'
+
+    # Footer = original footer text from the Markdown + "Generated on <date>"
+    gen_html = f'<p class="generated">{generated}</p>' if generated else ""
+    if footer.strip() or gen_html:
+        out += f'\n<footer class="resume-footer"><hr />{footer}{gen_html}</footer>'
     return out
 
 
-def render(md_path: Path, css_path: Path) -> tuple[str, str]:
+def render(md_path: Path, css_path: Path, date_format: str = DATE_FORMAT,
+           show_date: bool = True) -> tuple[str, str]:
+    now = datetime.now()
+    generated = now.strftime(date_format) if show_date else None
+
     text = md_path.read_text(encoding="utf-8")
-    body = structure(md_to_html(text))
+    body = structure(md_to_html(text), generated)
 
     title_m = re.search(r"^#\s+(.+)$", text, re.M)
     title = f"{title_m.group(1).strip()} - Resume" if title_m else "Resume"
 
     css = css_path.read_text(encoding="utf-8")
-    return PAGE.substitute(title=title, css=css, body=body), title
+    html_str = PAGE.substitute(
+        title=title, css=css, body=body, generated_iso=now.strftime("%Y-%m-%d")
+    )
+    return html_str, title
 
 
 def write_pdf(html_str: str, pdf_path: Path, base_url: Path) -> bool:
@@ -172,6 +185,10 @@ def main() -> None:
                     help="output directory")
     ap.add_argument("-n", "--name", default="resume",
                     help="output base name (default: resume)")
+    ap.add_argument("--date-format", default=DATE_FORMAT,
+                    help='strftime format for the generated date (default: "%%B %%d, %%Y")')
+    ap.add_argument("--no-date", action="store_true",
+                    help="do not print the generated date in the footer")
     args = ap.parse_args()
 
     for p in (args.input, args.css):
@@ -179,7 +196,7 @@ def main() -> None:
             sys.exit(f"File not found: {p}")
 
     args.out.mkdir(parents=True, exist_ok=True)
-    html_str, _ = render(args.input, args.css)
+    html_str, _ = render(args.input, args.css, args.date_format, not args.no_date)
 
     html_path = args.out / f"{args.name}.html"
     html_path.write_text(html_str, encoding="utf-8")
