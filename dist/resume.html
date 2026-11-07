@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An Hung Nguyen - Resume</title>
+<style>
+/* ==========================================================================
+   Academic Resume — stylesheet
+   Used for both the HTML page and the PDF (WeasyPrint) output.
+   Change the variables in :root to re-theme everything.
+   ========================================================================== */
+
+:root {
+  --ink: #1b1f24;
+  --muted: #59636e;
+  --accent: #1f3a5f;
+  --rule: #c9d1d9;
+  --serif: "Source Serif 4", "Libre Baskerville", "Palatino Linotype", Palatino,
+           Georgia, "Times New Roman", "Liberation Serif", serif;
+  --sans: "Inter", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+}
+
+/* ---------- Page (PDF) ---------- */
+@page {
+  size: A4;
+  margin: 15mm 15mm 18mm 15mm;
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-family: var(--sans);
+    font-size: 8pt;
+    color: #8b949e;
+  }
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+html { font-size: 10pt; }
+
+body {
+  margin: 0;
+  background: #e8ebef;
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 210mm;
+  margin: 24px auto;
+  padding: 16mm 15mm;
+  background: #fff;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { margin: 0 0 4pt; }
+strong { font-weight: 700; }
+
+/* ---------- Header ---------- */
+.resume-header { text-align: center; margin-bottom: 8pt; }
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 26pt;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  line-height: 1.15;
+}
+
+/* "COMPUTER SCIENTIST / AI RESEARCHER" */
+.resume-header > p:first-of-type {
+  margin: 4pt 0 0;
+  font-family: var(--sans);
+  font-size: 8.5pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.resume-header > p:first-of-type strong { font-weight: 600; }
+
+/* "Danang, Vietnam" */
+.resume-header > p:nth-of-type(2) { color: var(--muted); margin-top: 2pt; }
+
+/* contact list on one wrapped line */
+.resume-header ul {
+  list-style: none;
+  margin: 6pt 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 9pt;
+  color: var(--muted);
+}
+.resume-header li { margin: 0 8pt; }
+
+/* ---------- Sections ---------- */
+section { margin-top: 13pt; }
+
+h2 {
+  margin: 0 0 6pt;
+  padding-bottom: 2pt;
+  font-family: var(--sans);
+  font-size: 9.5pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1.2pt solid var(--accent);
+  break-after: avoid;
+}
+
+/* ---------- Entries ---------- */
+.entry { margin-bottom: 8pt; break-inside: avoid; }
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  break-after: avoid;
+}
+.entry-head h3 {
+  margin: 0;
+  font-size: 10.8pt;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.entry-head .loc {
+  margin-left: 12pt;
+  font-style: italic;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2pt;
+  break-after: avoid;
+}
+.entry-meta .left { font-style: italic; }
+.entry-meta .right {
+  margin-left: 12pt;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+ul { margin: 2pt 0 0; padding-left: 14pt; }
+li { margin: 1.5pt 0; }
+li::marker { color: var(--accent); }
+
+/* ---------- Publications (auto-numbered) ---------- */
+#publications { counter-reset: pub; }
+#publications .entry { counter-increment: pub; }
+#publications .entry-head h3 {
+  font-size: 10pt;
+  padding-left: 24pt;
+  text-indent: -24pt;
+}
+#publications .entry-head h3::before {
+  content: "[" counter(pub) "]";
+  display: inline-block;
+  width: 24pt;
+  text-indent: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+#publications .entry > :not(.entry-head) { margin-left: 24pt; }
+#publications ul { list-style: none; padding-left: 0; margin-left: 24pt; }
+#publications li { margin: 0; color: var(--ink); }
+#publications li:first-child { color: var(--ink); }
+#publications .entry-meta .left { color: var(--muted); }
+
+/* ---------- Skills / Languages (label + value rows) ---------- */
+#skills ul, #languages ul { list-style: none; padding-left: 0; }
+#skills li, #languages li { display: flex; margin: 2pt 0; }
+#skills li strong { flex: 0 0 92pt; color: var(--accent); }
+
+/* ---------- Top honors (date + text rows) ---------- */
+#top-honors-and-awards ul { list-style: none; padding-left: 0; break-inside: avoid; }
+#top-honors-and-awards li { display: flex; margin: 1.5pt 0; }
+#top-honors-and-awards .date {
+  flex: 0 0 52pt;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Footer ---------- */
+.resume-footer { margin-top: 14pt; text-align: center; }
+.resume-footer hr {
+  border: 0;
+  border-top: 0.6pt solid var(--rule);
+  margin: 0 0 4pt;
+}
+.resume-footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  color: #8b949e;
+}
+
+/* ---------- Print / PDF ---------- */
+@media print {
+  body { background: none; }
+  .page { margin: 0; padding: 0; max-width: none; box-shadow: none; }
+  a { color: var(--accent); }
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 640px) {
+  .page { margin: 0; padding: 20px 16px; box-shadow: none; }
+  .entry-head, .entry-meta { flex-direction: column; }
+  .entry-head .loc, .entry-meta .right { margin-left: 0; }
+  #publications .entry > :not(.entry-head) { margin-left: 0; }
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+<header class="resume-header"><h1>An Hung Nguyen</h1>
+<p><strong>COMPUTER SCIENTIST / AI RESEARCHER</strong></p>
+<p>Danang, Vietnam</p>
+<ul>
+<li>Mobile: +84354430933</li>
+<li>Email: nguyenanhung1903@gmail.com </li>
+<li>Birthday: March 19th, 2003</li>
+<li>Home: <a href="https://nguyenhung.me">nguyenhung.me</a></li>
+<li>GitHub: <a href="https://github.com/nguyenhung1903">github.com/nguyenhung1903</a></li>
+<li>LinkedIn: <a href="https://linkedin.com/in/nguyenhung1903">linkedin.com/in/nguyenhung1903</a></li>
+<li>Kaggle: nguyenhung1903</li>
+<li>Google Scholar: An Hung Nguyen</li>
+</ul>
+</header>
+<section id="personal-profile"><h2>Personal Profile</h2><p>I am a researcher with a strong passion for Artificial Intelligence and Data Science. I have applied AI to real-world problems in medicine and agriculture through collaborations with scientific labs in Vietnam and internationally.</p>
+<p>My research interests include Computational Biology, Bioinformatics, Mathematics, Hyper-complex and Quaternion numbers, View Synthesis, Neural Rendering, and Real-Time Graphics.</p>
+</section>
+<section id="education"><h2>Education</h2><div class="entry"><div class="entry-head"><h3>University of Science and Technology - The University of Danang</h3><span class="loc">Danang, VN</span></div><div class="entry-meta"><span class="left"><strong>B.S., Information Technology</strong> - 2021</span><span class="right">2025</span></div><ul>
+<li>Grade: 3.65/4.0</li>
+<li>Excellent Bachelor's Degree</li>
+<li>Working as an AI Researcher with Minh Tuan Pham PhD.</li>
+<li>Capstone Project: A Deep Learning-Based Approach for Multi-Weather Image Restoration and Enhancement. (<a href="http://thuvienso.dut.udn.vn/handle/DUT/16775">http://thuvienso.dut.udn.vn/handle/DUT/16775</a>)</li>
+<li>Courses: Data Science, Programming for Data Science, Knowledge Representation and Reasoning, Statistical Theory and Methods, Learning Skills through Case Studies, Artificial Intelligence, Machine Learning, Statistical Learning</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Le Quy Don upper-secondary school for the gifted</h3><span class="loc">Quang Tri, VN</span></div><div class="entry-meta"><span class="left"><strong>Informatics class (IT 18-21)</strong> - 2018</span><span class="right">2021</span></div><ul>
+<li>Specialised in Biology, Informatics, and Mathematics with Computer Science</li>
+<li>Selected as a member of the national-level scientific research competition team and the Informatics gifted student team.</li>
+</ul>
+</div></section>
+<section id="work-experience"><h2>Work Experience</h2><div class="entry"><div class="entry-head"><h3>SLA Software Logistik Artland GmbH</h3><span class="loc">Germany (Remote)</span></div><div class="entry-meta"><span class="left"><strong>Computer Scientist &amp; AI Engineer</strong> - Aug 2024</span><span class="right">Sept 2026</span></div><ul>
+<li>Support of integration of AI models into existing customer infrastructure.</li>
+<li>Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.</li>
+<li>Developed scripts and applications to automate and handle data.</li>
+<li>Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.</li>
+<li>Technical Skills: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.</li>
+<li>Soft Skills: Teamwork, Time Management, Communication, Presentation skills.</li>
+<li>Research Skills: Medical Research, Data Analysis, Data Engineering.</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>University of Regina</h3><span class="loc">Canada</span></div><div class="entry-meta"><span class="left"><strong>Collaboration Researcher</strong> - Aug 2024</span><span class="right">Sept 2025</span></div><ul>
+<li>Researched solutions for simulating chemical processes.</li>
+<li>Implemented simulation code using Matlab and Python.</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Phygital Labs</h3><span class="loc">Vietnam</span></div><div class="entry-meta"><span class="left"><strong>AI Intern</strong> - May 2024</span><span class="right">Jul 2024</span></div><ul>
+<li>Worked as an AI intern on deep learning projects.</li>
+<li>Worked with LLM models to propose solutions for querying large documents.</li>
+<li>Collaborated with a former Senior Google engineer to deploy systems.</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>FX Data</h3><span class="loc">Germany (Remote)</span></div><div class="entry-meta"><span class="left"><strong>Computer Scientist &amp; AI Engineer</strong> - Jan 2022</span><span class="right">Jul 2024</span></div><ul>
+<li>Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.</li>
+<li>Developed scripts and applications to automate and handle data.</li>
+<li>Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.</li>
+<li>Technical Skills: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.</li>
+<li>Soft Skills: Teamwork, Time Management, Communication, Presentation skills.</li>
+<li>Research Skills: Medical Research, Data Analysis, Data Engineering.</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Rhen Consulting</h3><span class="loc">Germany (Remote)</span></div><div class="entry-meta"><span class="left"><strong>AI Engineer</strong> - Oct 2021</span><span class="right">Dec 2021</span></div><ul>
+<li>Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.</li>
+<li>Developed scripts and applications to automate and handle data.</li>
+<li>Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.</li>
+</ul>
+</div></section>
+<section id="highlight-awards"><h2>Highlight Awards</h2><div class="entry"><div class="entry-head"><h3>Fourth Place Award in the Field of Science, Engineering, and Technology</h3><span class="loc">Vietnam</span></div><div class="entry-meta"><span class="left">Vietnam Student Science Research and Innovation 2022 - 2023</span><span class="right">Dec 2023</span></div><p>Project title: Quaternion Convolutional Neural Networks for Image Depth Estimation</p>
+</div><div class="entry"><div class="entry-head"><h3>Fourth Place Award in the in Computational Biology and Bioinformatics</h3><span class="loc">Vietnam</span></div><div class="entry-meta"><span class="left">Vietnam National Secondary Student Science and Engineering Fair</span><span class="right">March 2021</span></div><p>Project title: Applying Deep Learning to the process of diagnosing, analyzing and detecting damage to the retina due to diabetes</p>
+</div><div class="entry"><div class="entry-head"><h3>Third Prize in the Provincial Contest for Excellent Students in Informatics</h3><span class="loc">Vietnam</span></div><div class="entry-meta"><span class="left">Quang Tri Department of Education and Training</span><span class="right">Jan 2020</span></div></div></section>
+<section id="publications"><h2>Publications</h2><div class="entry"><div class="entry-head"><h3>All-in-One Image Restoration with Quaternion Cross-Attention and Haar Frequency Decomposition</h3></div><div class="entry-meta"><span class="left">Submitted to Signal, Image and Video Processing (Journal Q2)</span><span class="right">2025</span></div><ul>
+<li>Status: Under review</li>
+<li><strong>An Hung Nguyen</strong>, Minh Tuan Pham</li>
+<li><a href="https://dx.doi.org/10.21203/rs.3.rs-7260641/v1">dx.doi.org/10.21203/rs.3.rs-7260641/v1</a></li>
+<li>This work is part of my undergraduate research project and capstone thesis.</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Optimizing Retrieval in Vietnamese Literary QA Using Named-Entity Relationship Graphs</h3></div><div class="entry-meta"><span class="left">Submitted to ACM Transactions on Asian and Low-Resource Language Information Processing (Q2)</span><span class="right">2025</span></div><ul>
+<li>Status: Under review</li>
+<li>Minh Tuan Pham, <strong>An Hung Nguyen</strong>, Phuc Hao Do, Thanh Huy Nguyen, and Nam Do</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Real-Time 3D Reconstruction through Image Synthesis and IoT Integration</h3></div><div class="entry-meta"><span class="left">Manuscript under review</span><span class="right">2025</span></div><ul>
+<li>Cong Thang PHAM, <strong>An Hung Nguyen</strong>, Tan Sang Truong, Dai Quy Tran, Si Tien Tran</li>
+<li>Submitted to Vestnik St. Petersburg University: Mathematics</li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Adaptive Hybrid Transformer Network with Frequency Attention for All-in-One Image Restoration</h3></div><div class="entry-meta"><span class="left">PSBB25 - Moscow, RUSSIA - June 09</span><span class="right">11, 2025</span></div><ul>
+<li>Cong Thang Pham, <strong>An Hung Nguyen</strong>, Quoc Cuong Nguyen, Minh Nhat Phan, Thanh Than Nguyen</li>
+<li><a href="https://doi.org/10.5194/isprs-archives-XLVIII-2-W9-2025-213-2025">10.5194/isprs-archives-XLVIII-2-W9-2025-213-2025</a></li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>DehazeCLNet: A Contrastive Learning Framework with Advanced Feature Extraction for Image Dehazing</h3></div><div class="entry-meta"><span class="left">SOICT 2024 (Springer CCIS) - Danang, Vietnam</span><span class="right">December 13-15, 2024</span></div><ul>
+<li>Cong Thang Pham, <strong>An Hung Nguyen</strong>, Quoc Cuong Nguyen, Minh Nhat Phan</li>
+<li><a href="https://doi.org/10.1007/978-981-96-4282-3_23">10.1007/978-981-96-4282-3_23</a></li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Enhancing Image Classification Capabilities In The Vision Transformer Network Model With Quaternion Algebra</h3></div><div class="entry-meta"><span class="left">CITA 2024 - Danang, Vietnam</span><span class="right">July, 2024</span></div><ul>
+<li>Minh Tuan Pham, <strong>An Hung Nguyen</strong></li>
+<li><a href="https://elib.vku.udn.vn/handle/123456789/4031">https://elib.vku.udn.vn/handle/123456789/4031</a></li>
+<li><a href="https://nguyenhung.me/paper/QViT.pdf">https://nguyenhung.me/paper/QViT.pdf</a></li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Enhancing Convolutional Neural Network Architectures with Long Short-Term Memory for Improved Image Classification</h3></div><div class="entry-meta"><span class="left">IEEE: Institute of Electrical and Electronics Engineers - Danang, Vietnam</span><span class="right">November 10-11, 2023</span></div><ul>
+<li><strong>An Hung Nguyen</strong>, Minh Tuan Pham</li>
+<li><a href="https://doi.org/10.1109/ATiGB59969.2023.10364368">10.1109/ATiGB59969.2023.10364368</a></li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Quaternion Convolutional Neural Networks for Depth Estimation</h3></div><div class="entry-meta"><span class="left">IEEE: Institute of Electrical and Electronics Engineers - Mie, Japan</span><span class="right">January 4, 2023</span></div><ul>
+<li><strong>An Hung Nguyen</strong>, Cao Duy Hoang, Dang Hoang Phu Phan, Minh Tuan Pham</li>
+<li><a href="https://doi.org/10.1109/SCISISIS55246.2022.10002074">https://doi.org/10.1109/SCISISIS55246.2022.10002074</a></li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Weight Initialization for Complex Number Convolutional Neural Networks Using Genetic Algorithms</h3></div><div class="entry-meta"><span class="left">Journal on Information Technologies and Communications - Vietnam</span><span class="right">June 30, 2022</span></div><ul>
+<li>Minh Tuan Pham, <strong>An Hung Nguyen</strong></li>
+<li><a href="https://doi.org/10.32913/mic-ict-research-vn.v2022.n1.1054">https://doi.org/10.32913/mic-ict-research-vn.v2022.n1.1054</a></li>
+</ul>
+</div><div class="entry"><div class="entry-head"><h3>Efficient Complex Valued Neural Network with Fourier Transform on Image Denoising</h3></div><div class="entry-meta"><span class="left">ACM: Association for Computing Machinery - Dubai, UAE</span><span class="right">December 16, 2021</span></div><ul>
+<li>Minh Tuan Pham, Van Quang Nguyen, Cao Duy Hoang, <strong>An Hung Nguyen</strong></li>
+<li><a href="https://doi.org/10.1145/3508072.3508081">https://doi.org/10.1145/3508072.3508081</a></li>
+</ul>
+</div></section>
+<section id="skills"><h2>Skills</h2><ul>
+<li><strong>Programming:</strong> C/C++, Python (Pandas, PyTorch, NumPy, Scikit-learn. etc), Java, dot NET, React Native, SQL.</li>
+<li><strong>Miscellaneous:</strong> Linux, Shell (Bash/Zsh), LATEX(Overleaf/R Markdown), Microsoft Office, Git, Arduino, MCU microcontroller.</li>
+<li><strong>Soft Skills:</strong> Time Management, Teamwork, Leadership, Problem-solving, Documentation, Engaging Presentation.</li>
+</ul>
+</section>
+<section id="top-honors-and-awards"><h2>Top honors and awards</h2><ul>
+<li><span class="date">Mar 2025</span><span>2nd prizes, Faculty level Student Scientific Research and Innovation - Vietnam</span></li>
+<li><span class="date">Dec 2023</span><span>Third prize, University-level Student Scientific Research and Innovation - Vietnam</span></li>
+<li><span class="date">Dec 2023</span><span>First prize, Faculty level Student Scientific Research and Innovation - Vietnam</span></li>
+<li><span class="date">Dec 2023</span><span>4th prizes, Vietnam Student Science Research and Innovation - Vietnam</span></li>
+<li><span class="date">Jun 2023</span><span>3rd prizes, Faculty level Student Scientific Research and Innovation - Vietnam</span></li>
+<li><span class="date">Mar 2022</span><span>2nd prizes, Faculty level Student Science Research and Innovation - Vietnam</span></li>
+<li><span class="date">Aug 2021</span><span>Second prize (ranked 1st), Innovative Generation 2021 - Vietnam</span></li>
+<li><span class="date">Mar 2021</span><span>4th prizes, Vietnam National Secondary Student Science and Engineering Fair - Vietnam</span></li>
+<li><span class="date">Jan 2021</span><span>4th prizes, Provincial Contest for Excellent Students in Informatics - Vietnam</span></li>
+<li><span class="date">Jan 2020</span><span>3rd prizes, Provincial Contest for Excellent Students in Informatics - Vietnam</span></li>
+</ul>
+</section>
+<section id="languages"><h2>Languages</h2><ul>
+<li>English: Professional Proficiency (B2)</li>
+<li>Chinese: Minimum Professional Proficiency</li>
+<li>Vietnamese: Native proficiency</li>
+</ul>
+</section>
+</div>
+</body>
+</html>
