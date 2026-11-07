@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import os
+import shutil
 import argparse
 import re
 import sys
@@ -9,6 +11,7 @@ from string import Template
 import markdown
 
 HERE = Path(__file__).resolve().parent
+CHECKPOINTS_DIR = HERE / f"resume/checkpoints"
 
 MONTHS = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*"
 SEP = " — "  
@@ -196,6 +199,12 @@ def main() -> None:
             sys.exit(f"File not found: {p}")
 
     args.out.mkdir(parents=True, exist_ok=True)
+    
+    
+    os.makedirs(CHECKPOINTS_DIR, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    shutil.copy(args.input, os.path.join(CHECKPOINTS_DIR, f"RESUME_{timestamp}.md"))
+    
     html_str, _ = render(args.input, args.css, args.date_format, not args.no_date)
 
     html_path = args.out / f"{args.name}.html"
