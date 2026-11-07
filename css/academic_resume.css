@@ -186,6 +186,18 @@ li::marker { color: var(--accent); }
   font-variant-numeric: tabular-nums;
 }
 
+/* ---------- languages (language + level) ---------- */
+#languages li {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+#languages li .language {
+    min-width: 120px;
+}
+
 /* ---------- Footer ---------- */
 .resume-footer { margin-top: 14pt; text-align: center; }
 .resume-footer hr {

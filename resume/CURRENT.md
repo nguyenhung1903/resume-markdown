@@ -210,6 +210,4 @@ ACM: Association for Computing Machinery - Dubai, UAE - December 16, 2021
 
 ## Languages
 - English: Professional Proficiency (B2)
-- Chinese: Minimum Professional Proficiency
 - Vietnamese: Native proficiency
----

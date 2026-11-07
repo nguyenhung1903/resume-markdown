@@ -111,6 +111,18 @@ def build_section(chunk: str) -> str:
             body,
         )
 
+    
+    # languages
+    if slug == "languages":
+        body = re.sub(
+            r"<li>\s*(.*?):\s*(.*?)\s*</li>",
+            lambda m: (
+                f'<li><span class="language">{m.group(1)}</span>'
+                f'<span>{m.group(2)}</span></li>'
+            ),
+            body,
+        )
+    
     return f'<section id="{slug}"><h2>{heading}</h2>{body}</section>'
 
 
