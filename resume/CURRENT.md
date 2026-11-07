@@ -45,15 +45,25 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 ### SLA Software Logistik Artland GmbH
 *Germany (Remote)*
 
+**AI Software Engineer** — Aug 2025 - Sept 2026
+
+- Developed and deployed automation systems for low-code AI model training and data management as part of the [**Dubai-Premiere: TrAInity – AI-Empowerment**](https://lnkd.in/p/gYsuJ6rw) project.
+- Built an end-to-end automated pipeline for image classification and object detection, covering dataset analysis (EDA), preprocessing, model training, and evaluation. Simplified the workflow so users only need to provide datasets and select the number of GPUs, with automated training reports generated upon completion.
+
+### SLA Software Logistik Artland GmbH
+*Germany (Remote)*
+
 **Computer Scientist & AI Engineer** — Aug 2024 - Sept 2026
 
-- Support of integration of AI models into existing customer infrastructure.
+- Developed an OCR module for real-time recognition and tracking of slaughter numbers printed on animal hides, supporting automated traceability (One of them: [https://lnkd.in/p/gufFDTc6](https://lnkd.in/p/gufFDTc6)).
+- Supported the integration and deployment of AI models into existing customer infrastructures, including hardware selection, automated installation scripts, and system monitoring and troubleshooting.
+- Developed end-to-end conversion and optimization scripts to convert PyTorch and TensorFlow models into NPU-compatible formats for efficient inference on edge devices.
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
 - Developed scripts and applications to automate and handle data.
 - Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.
-- Technical Skills: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.
-- Soft Skills: Teamwork, Time Management, Communication, Presentation skills.
-- Research Skills: Medical Research, Data Analysis, Data Engineering.
+- **Technical Skills**: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.
+- **Soft Skills**: Teamwork, Time Management, Communication, Presentation skills.
+- **Research Skills**: Medical Research, Data Analysis, Data Engineering.
 
 ### University of Regina
 *Canada*
@@ -80,9 +90,9 @@ My research interests include Computational Biology, Bioinformatics, Mathematics
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
 - Developed scripts and applications to automate and handle data.
 - Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.
-- Technical Skills: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.
-- Soft Skills: Teamwork, Time Management, Communication, Presentation skills.
-- Research Skills: Medical Research, Data Analysis, Data Engineering.
+- **Technical Skills**: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.
+- **Soft Skills**: Teamwork, Time Management, Communication, Presentation skills.
+- **Research Skills**: Medical Research, Data Analysis, Data Engineering.
 
 ### Rhen Consulting
 *Germany (Remote)*
