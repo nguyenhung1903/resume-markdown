@@ -13,10 +13,12 @@ Danang, Vietnam
 - Google Scholar: [An Hung Nguyen](https://scholar.google.com/citations?user=OLV8FnYAAAAJ&hl=en)
 
 ## Personal Profile
-
+<p style="text-align: justify;">
 AI Engineer with 5+ years of experience in Computer Vision, bridging academic research and real-world applications. Experienced in building end-to-end machine learning pipelines, from data analysis and model training to optimization and deployment on edge devices. I also have experience working with Large Language Models (LLMs) and helping customers improve the reliability, scalability, and cost-efficiency of AI solutions.
-
+</p>
+<p style="text-align: justify;">
 I have authored and co-authored 10+ research papers and received several academic awards throughout high school and university. Passionate about research and continuous learning, I enjoy exploring new technologies, tackling challenging problems, and turning innovative ideas into practical solutions.
+</p>
 
 ## Education
 
