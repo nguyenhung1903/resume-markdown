@@ -254,7 +254,7 @@ The following are selected projects that I found particularly interesting throug
 ### News Article Topic Classification and Clustering Based on Titles and Content (2024)
 
 - VI: Phân Loại Chủ Đề Và Phân Cụm Bài Báo Dựa Trên Tiêu Đề Và Nội Dung
-- Score: 10/10 -- Ranked 1st in the Faculty of Information Technology.
+- Score: 10/10 (Data Science Course) -- Ranked 1st in the Faculty of Information Technology.
 - Proposed and implemented a method combining TF-IDF with fixed-dimensional feature vector representations.
 - [SLIDE](https://github.com/nguyenhung1903/NewsCategoryClassification/raw/refs/heads/main/Team21_KHDL_Presentation_Final.pptx) | [CODE](https://github.com/nguyenhung1903/NewsCategoryClassification) | [PDF](https://github.com/nguyenhung1903/NewsCategoryClassification/blob/main/TieuLuanKHDL_Team21_21TDT.pdf)
 
