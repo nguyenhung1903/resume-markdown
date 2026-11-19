@@ -239,9 +239,9 @@ The following are selected projects that I found particularly interesting throug
 ### Applying Deep Learning to the process of diagnosing, analyzing and detecting damage to the retina due to diabetes (2020 - 2021)
 
 - VI: Ứng dụng Deep Learning vào việc chẩn đoán, phân tích và phát triển các tổn thương ở võng mạc do bệnh lý đái tháo đường
-- First prize, Provincial Contest for Secondary Student Science and Engineering Fair 2020 - 2021 — Vietnam
-- 4th prizes, Vietnam National Secondary Student Science and Engineering Fair 2020 - 2021 — Vietnam
-- Second prize (ranked 1st), Innovative Generation 2021 — Vietnam [Dan Tri newpaper](https://dantri.com.vn/giao-duc/vinh-danh-nhom-tac-gia-co-y-tuong-xuat-sac-ve-cong-nghe-thong-tin-20210821135629502.htm)
+- First prize, Provincial Contest for Secondary Student Science and Engineering Fair 2020 - 2021
+- 4th prizes, Vietnam National Secondary Student Science and Engineering Fair 2020 - 2021
+- Second prize (ranked 1st), Innovative Generation 2021 - [Dan Tri newpaper](https://dantri.com.vn/giao-duc/vinh-danh-nhom-tac-gia-co-y-tuong-xuat-sac-ve-cong-nghe-thong-tin-20210821135629502.htm)
 
 - [SLIDE](https://docs.google.com/presentation/d/1OXbT9jXM4C4V85QtYsn79qnuq1YvbzftlXflIQXyuA8/edit?slide=id.p1#slide=id.p1) | [DEMO](https://drive.google.com/file/d/1bqQsUb6XA5Zqh5UlObnI6hxdcHDIsPGq/view?usp=sharing)
 
