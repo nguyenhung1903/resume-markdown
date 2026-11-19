@@ -38,6 +38,7 @@ I have authored and co-authored 10+ research papers and received several academi
 
 **Informatics class (IT 18-21)** — 2018 - 2021
 
+- Co-founder LQD-STEM CLUB 
 - Specialised in Biology, Informatics, and Mathematics with Computer Science
 - Selected as a member of the national-level scientific research competition team and the Informatics gifted student team.
 
@@ -200,12 +201,6 @@ ACM: Association for Computing Machinery — Dubai, UAE — December 16, 2021
 - Minh Tuan Pham, Van Quang Nguyen, Cao Duy Hoang, An Hung Nguyen
 - [https://doi.org/10.1145/3508072.3508081](https://doi.org/10.1145/3508072.3508081)
 
-## Skills
-
-- **Programming:** C/C++, Python (Pandas, PyTorch, NumPy, Scikit-learn. etc), Java, dot NET, React Native, SQL.
-- **Miscellaneous:** Linux, Shell (Bash/Zsh), LATEX(Overleaf/R Markdown), Microsoft Office, Git, Arduino, MCU microcontroller.
-- **Soft Skills:** Time Management, Teamwork, Leadership, Problem-solving, Documentation, Engaging Presentation.
-
 ## Top honors and awards
 
 - Mar 2025 — 2nd prizes, Faculty level Student Scientific Research and Innovation — Vietnam
@@ -218,6 +213,68 @@ ACM: Association for Computing Machinery — Dubai, UAE — December 16, 2021
 - Mar 2021 — 4th prizes, Vietnam National Secondary Student Science and Engineering Fair — Vietnam
 - Jan 2021 — 4th prizes, Provincial Contest for Excellent Students in Informatics — Vietnam
 - Jan 2020 — 3rd prizes, Provincial Contest for Excellent Students in Informatics — Vietnam
+
+## Projects
+The following are selected projects that I found particularly interesting throughout my journey from gifted high school to university.
+
+### Development of an Adaptive Virtual Assistant Based on User Behavior Learning (2019)
+
+- VI: Xây dựng và phát triển trợ lý ảo học hỏi theo thói quen người dùng
+- Top 4 in the 2019 Provincial Youth Innovation Competition.
+- Working Principle: Users interact with the assistant through a voice-based interface. Speech is converted into text, which is then transformed into vector embeddings. These embeddings are stored in a database. When a new voice command is received, the system converts it into an embedding and retrieves the most similar vectors from the database to identify the closest matching command and provide an appropriate response or action. The project was inspired by Google Assistant.
+
+### AdrenalineEco: Smart Farming System (2019)
+
+- VI: Trồng cây công nghệ cao (Ứng dụng IoT và AI vào quá trình theo dõi và thúc đẩy sự phát triển của cây) 
+- Participated in TechFest 2019 in Quang Ninh, Vietnam.
+- Sensors collect environmental and plant-related data, including soil quality and other growing conditions.
+- An automated system controls irrigation, lighting, and ventilation to maintain optimal growing conditions, similar to a smart greenhouse.
+- AI analyzes time-series data collected from sensors and images captured by cameras to assess plant conditions and determine appropriate environmental adjustments based on the specific plant species.
+
+### ChatBot "Hôm Nay Ăn Gì ?" - Food Recommendation System (2019 - 2020)
+
+- Participated in Vietnam Online Hackathon 2019
+- Demo: [https://www.youtube.com/watch?v=6FBwJD6-Q6Q](https://www.youtube.com/watch?v=6FBwJD6-Q6Q)
+
+### Applying Deep Learning to the process of diagnosing, analyzing and detecting damage to the retina due to diabetes (2020 - 2021)
+
+- VI: Ứng dụng Deep Learning vào việc chẩn đoán, phân tích và phát triển các tổn thương ở võng mạc do bệnh lý đái tháo đường
+- First prize, Provincial Contest for Secondary Student Science and Engineering Fair 2020 - 2021 — Vietnam
+- 4th prizes, Vietnam National Secondary Student Science and Engineering Fair 2020 - 2021 — Vietnam
+- Second prize (ranked 1st), Innovative Generation 2021 — Vietnam [Dan Tri newpaper](https://dantri.com.vn/giao-duc/vinh-danh-nhom-tac-gia-co-y-tuong-xuat-sac-ve-cong-nghe-thong-tin-20210821135629502.htm)
+
+- [SLIDE](https://docs.google.com/presentation/d/1OXbT9jXM4C4V85QtYsn79qnuq1YvbzftlXflIQXyuA8/edit?slide=id.p1#slide=id.p1) | [DEMO](https://drive.google.com/file/d/1bqQsUb6XA5Zqh5UlObnI6hxdcHDIsPGq/view?usp=sharing)
+
+### Development of a System for Monitoring Resources and Processes in a Local Area Network (2023)
+
+- VI: Xây dựng hệ thống giám sát các tài nguyên và tiến trình của máy trạm trong mạng nội bộ
+- [CODE](https://github.com/nguyenhung1903/PBL4-SystemMonitor) | [REPORT](https://drive.google.com/file/d/1EVyNs09iu4SQNgZJ4eh6A-28RRg1Qxdg/view?usp=sharing)
+
+
+### News Article Topic Classification and Clustering Based on Titles and Content (2024)
+
+- VI: Phân Loại Chủ Đề Và Phân Cụm Bài Báo Dựa Trên Tiêu Đề Và Nội Dung
+- Score: 10/10 -- Ranked 1st in the Faculty of Information Technology.
+- Proposed and implemented a method combining TF-IDF with fixed-dimensional feature vector representations.
+- [SLIDE](https://github.com/nguyenhung1903/NewsCategoryClassification/raw/refs/heads/main/Team21_KHDL_Presentation_Final.pptx) | [CODE](https://github.com/nguyenhung1903/NewsCategoryClassification) | [PDF](https://github.com/nguyenhung1903/NewsCategoryClassification/blob/main/TieuLuanKHDL_Team21_21TDT.pdf)
+
+### TouristBot: Development of a Travel Assistance Application Based on Large Language Models (2024)
+
+- VI: Ứng dụng hỗ trợ du lịch dựa trên nền tảng mô hình ngôn ngữ lớn
+- Participated in Unihack 2024
+- [SLIDE](https://docs.google.com/presentation/d/1cFdm28Rufot77ixj55EMKOOrOxXsA3OcqOVzuuT0EPs/edit?usp=sharing) | [DEMO](https://www.youtube.com/watch?v=XX2DDarsbmA) | [CODE](https://github.com/DuLichVoiChatBot/touristbot-code)
+
+### A Deep Learning-Based Approach for Multi-Weather Image Restoration and Enhancement (2025)
+
+- VI: Nghiên cứu và phát triển hệ thống khôi phục hình ảnh trong điều kiện đa thời tiết bằng phương pháp học sâu
+- Journal Paper: All-in-One Image Restoration with Quaternion Cross-Attention and Haar Frequency Decomposition
+- [PAPER](https://dx.doi.org/10.21203/rs.3.rs-7260641/v1) | [REPORT](http://thuvienso.dut.udn.vn/handle/DUT/16775)
+
+## Skills
+
+- **Programming:** C/C++, Python (Pandas, PyTorch, NumPy, Scikit-learn. etc), Java, dot NET, React Native, SQL.
+- **Miscellaneous:** Linux, Shell (Bash/Zsh), LATEX(Overleaf/R Markdown), Microsoft Office, Git, Arduino, MCU microcontroller.
+- **Soft Skills:** Time Management, Teamwork, Leadership, Problem-solving, Documentation, Engaging Presentation.
 
 ## Languages
 - English: Minimum Professional Proficiency (IELTS 5.5)
