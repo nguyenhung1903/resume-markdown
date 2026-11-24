@@ -31,7 +31,7 @@ I have authored and co-authored 10+ research papers and received several academi
 - Excellent Bachelor's Degree
 - Working as an AI Researcher with Minh Tuan Pham PhD.
 - Capstone Project: A Deep Learning-Based Approach for Multi-Weather Image Restoration and Enhancement. ([http://thuvienso.dut.udn.vn/handle/DUT/16775](http://thuvienso.dut.udn.vn/handle/DUT/16775))
-- Courses: Data Science, Programming for Data Science, Knowledge Representation and Reasoning, Statistical Theory and Methods, Learning Skills through Case Studies, Artificial Intelligence, Machine Learning, Statistical Learning
+<!-- - Courses: Data Science, Programming for Data Science, Knowledge Representation and Reasoning, Statistical Theory and Methods, Learning Skills through Case Studies, Artificial Intelligence, Machine Learning, Statistical Learning -->
 
 ### Le Quy Don upper-secondary school for the gifted
 *Quang Tri, VN*
@@ -39,7 +39,7 @@ I have authored and co-authored 10+ research papers and received several academi
 **Informatics class (IT 18-21)** — 2018 - 2021
 
 - Co-founder LQD-STEM CLUB 
-- Specialised in Biology, Informatics, and Mathematics with Computer Science
+<!-- - Specialised in Biology, Informatics, and Mathematics with Computer Science -->
 - Selected as a member of the national-level scientific research competition team and the Informatics gifted student team.
 
 ## Work Experience
@@ -63,9 +63,6 @@ I have authored and co-authored 10+ research papers and received several academi
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
 - Developed scripts and applications to automate and handle data.
 - Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.
-- **Technical Skills**: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.
-- **Soft Skills**: Teamwork, Time Management, Communication, Presentation skills.
-- **Research Skills**: Medical Research, Data Analysis, Data Engineering.
 
 ### University of Regina
 *Canada*
@@ -92,9 +89,6 @@ I have authored and co-authored 10+ research papers and received several academi
 - Collaborated with an AI team to develop neural network architectures to detect and segment animal pathogens.
 - Developed scripts and applications to automate and handle data.
 - Automated and optimized the data handling process for signal processing, worked with Linux distributions, performed shell scripting, and utilized various Linux tools.
-- **Technical Skills**: Python with PyTorch, NumPy, Matplotlib, Pandas, Scikit-learn, C++, Ubuntu Linux, Linux tools, Apt, Scripting, Git.
-- **Soft Skills**: Teamwork, Time Management, Communication, Presentation skills.
-- **Research Skills**: Medical Research, Data Analysis, Data Engineering.
 
 ### Rhen Consulting
 *Germany (Remote)*
