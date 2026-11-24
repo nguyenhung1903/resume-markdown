@@ -258,6 +258,15 @@ The following are selected projects that I found particularly interesting throug
 - Proposed and implemented a method combining TF-IDF with fixed-dimensional feature vector representations.
 - [SLIDE](https://github.com/nguyenhung1903/NewsCategoryClassification/raw/refs/heads/main/Team21_KHDL_Presentation_Final.pptx) | [CODE](https://github.com/nguyenhung1903/NewsCategoryClassification) | [PDF](https://github.com/nguyenhung1903/NewsCategoryClassification/blob/main/TieuLuanKHDL_Team21_21TDT.pdf)
 
+### 3D Image Synthesis System Using Novel View Synthesis (2024)
+
+- VI: Hệ thống sinh hình ảnh 3D bằng phương pháp tổng hợp góc nhìn hình ảnh
+- Paper: Real-Time 3D Reconstruction through Image Synthesis and IoT Integration
+- The system uses an ESP8266 to control a rotating platform, communicating with an Orange Pi Zero 3 via TCP. The Orange Pi is responsible for capturing images using a camera.
+- The captured images are sent to a server for background removal.
+- The system collects and processes N images of the object from different viewing angles.
+- The processed images are fed into a training-free 3D reconstruction model, which generates a 3D object by estimating its geometry, colors, and polygonal mesh.
+
 ### TouristBot: Development of a Travel Assistance Application Based on Large Language Models (2024)
 
 - VI: Ứng dụng hỗ trợ du lịch dựa trên nền tảng mô hình ngôn ngữ lớn
@@ -269,6 +278,16 @@ The following are selected projects that I found particularly interesting throug
 - VI: Nghiên cứu và phát triển hệ thống khôi phục hình ảnh trong điều kiện đa thời tiết bằng phương pháp học sâu
 - Journal Paper: All-in-One Image Restoration with Quaternion Cross-Attention and Haar Frequency Decomposition
 - [PAPER](https://dx.doi.org/10.21203/rs.3.rs-7260641/v1) | [REPORT](http://thuvienso.dut.udn.vn/handle/DUT/16775)
+
+## Funny Projects
+
+These are personal projects developed after November 2026 to explore personal interests and address everyday needs.
+
+### Electronic Monitor: An IoT-based Electronic Monitoring System
+
+- Monitors power consumption, electrical parameters, and device operating status through a CozyLife Wi-Fi Smart Plug.
+- Monitors system availability, detects unexpected shutdowns and restarts, and sends notifications via Discord.
+- **Code:** [https://github.com/nguyenhung1903/cozylife-monitor](https://github.com/nguyenhung1903/cozylife-monitor)
 
 ## Skills
 
